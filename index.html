@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background: #333333;  
+      background: -webkit-linear-gradient(to right, #dd1818, #333333);  
+      background: linear-gradient(to right, #dd1818, #333333);
+    }
+
+    header {
+      text-align: center;
+      background-color: #FFE53B;
+      background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+      color: white;
+      padding: 30px;
+      font-size: 50px;
+    }
+
+    .topnav {
+      background-color: #FFE53B;
+      background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+      overflow: hidden;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+    .topnav a {
+      color: black;
+      font-size: 17px;
+      padding: 15px 16px;
+    
+      float: left;
+      transition: 0.5s;
+    }
+
+    .topnav:hover {
+      background-color: blue;
+    }
+
+    .topnav a.active {
+      background-color: blue;
+    }
+
+    .welcome {
+      text-align: center;
+      border-style: double;
+      border-width: 20px;
+      color: white;
+    }
+
+    .logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .best {
+      width: 100%;
+      max-width: 500px;
+      margin: 20px;
+      border-style: double;
+      transition-duration: 0.5s;
+      background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+    }
+
+    .best:hover {
+      background-color: #FBAB7E;
+      background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+      font-size: 15px;
+      color: #4d3319; 
+    }
+
+    .card-group {
+      text-align: center;
+      color: black;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px 0;
+    }
+
+    .card {
+      width: calc(33.33% - 20px);
+      margin: 10px;
+      background-color: #FFF; 
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #333;
+      text-align: center;
+      padding: 10px;
+      color: white;
+    }
+
+   
+    @media screen and (max-width: 991px) {
+      .best {
+        max-width: 100%;
+      }
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+
+    
+    @media screen and (max-width: 767px) {
+      header {
+        font-size: 30px;
+        padding: 15px;
+      }
+      .topnav {
+        display: block;
+      }
+      .topnav a {
+        float: none;
+        display: block;
+        text-align: center;
+      }
+      .card {
+        width: calc(100% - 20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Mash Head Studio</header>
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="games.html">Games</a>
+    <a href="about.html">About Us</a>
+  </div>
+  <div class="welcome">
+    <h1>Welcome to Mash Head Studio</h1>
+  </div>
+  <img src="mashhead.jpeg" alt="Mash Head Studio Logo" class="logo">
+  <div class="content">
+    <div class="best">
+      <h1>Home of the best</h1>
+      <h2>Discover the world of immersive gaming. We are passionate about creating unforgettable experiences that captivate players and push the boundaries of interactive entertainment. Dive into a universe where creativity meets technology, where every pixel tells a story, and where gaming becomes an adventure.</h2>
+    </div>
+    <div class="best">
+      <h1>Our Games:</h1>
+      <h2>Explore our diverse portfolio of games, ranging from epic RPGs to adrenaline-pumping action titles and mind-bending puzzle adventures. Whether you're a seasoned gamer or just starting your journey, we have something for everyone.</h2>
+    </div>
+    <div class="best">
+      <h1>Community:</h1>
+      <h2>Join our vibrant community of gamers from around the globe. Connect with fellow players, share tips and tricks, and participate in exciting events and competitions. At Mash Head Studio, gaming isn't just a hobby—it's a community-driven experience.</h2>
+    </div>
+  </div>
+  <h1 style="text-align: center; font-size: 40px; color: white;">Latest Gaming News!</h1>
+  <div class="card-group">
+    <div class="card">
+      <img src="bungie.webp" class="card-img-top" alt="Bungie's Marathon">
+      <div class="card-body">
+        <h4 class="card-title">Bungie's first big hit, Marathon, is now free on Steam thanks to a fan revival that has Bungie's blessing</h4>
+        <p class="card-text">Classic Marathon 2 and Classic Marathon Infinity are coming next</p>
+        <p class="card-text"><small class="text-muted">By Jonathan Bolding published 15 hours ago</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="helldive.webp" class="card-img-top" alt="Helldivers 2">
+      <div class="card-body">
+        <h4 class="card-title">Solo players, it's not just you: 1-player missions in Helldivers 2 currently have 4-player patrol spawn times</h4>
+        <p class="card-text">Helldivers 2, despite being a co-op shooter, does have a respectable contingent of lone wolves. That's for a variety of reasons—including (but not limited to) just liking the unique experience of it more. As of patch 1.000.300, however, solo missions have become a whole lot harder, just likely not in the way its devs intended them to be.</p>
+        <p class="card-text"><small class="text-muted">By Harvey Randall published yesterday</small></p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="manor.webp" class="card-img-top" alt="Manor Lords">
+      <div class="card-body">
+        <h4 class="card-title">Manor Lords' new massive patch stops your villagers from partying too hard and introduces players to the woeful world of the King's Tax</h4>
+        <p class="card-text">The new pre-release patch for Manor Lords has just been released for all to try out, and it sure does fix a long list of problems, more so than the developer Greg "Slavic Magic" Styczeń had previously promised.</p>
+        <p class="card-text"><small class="text-muted">By Elie Gould published 22 hours ago</small></p>
+      </div>
+    </div>
+  </div>
+  <footer>&copy; John Russel Vicente</footer>
+</body>
+</html>
